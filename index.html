@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Age calculator app</title>
+</head>
+<body>
+  <div class="age-calculator">
+    <form class="form">
+      <div class="form-item">
+        <label for="day">DAY</label>
+        <input type="number" class="day" id="day" placeholder="DD">
+        <p class="invalid-day" id="invalid-day"></p>
+      </div>
+
+      <div class="form-item">
+        <label for="month">MONTH</label>
+        <input type="number" class="month" id="month" placeholder="MM">
+        <p class="invalid-month" id="invalid-month"></p>
+      </div>
+
+      <div class="form-item">
+        <label for="month">YEAR</label>
+        <input type="number" class="year" id="year" placeholder="YYYY">
+        <p class="invalid-year" id="invalid-year"></p>
+      </div>
+    </form>
+    
+    <div class="calculator-box">
+      <div class="line"></div>
+      <button id="submit-btn"><img src="assets/images/icon-arrow.svg" alt="button"></button>
+    </div>
+
+    <div class="results">
+      <div class="year-el">
+        <div class="year-blanks">- - </div>
+        <h1>years</h1>
+      </div>
+
+      <div class="month-el">
+        <div class="month-blanks">- -</div>
+        <h1>months</h1>
+      </div>
+
+      <div class="day-el">
+        <div class="day-blanks">- -</div>
+        <h1>days</h1>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
